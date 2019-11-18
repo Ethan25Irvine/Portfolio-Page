@@ -1,0 +1,14 @@
+.navbar { 
+        color: #ffffff;
+        background-color: #ffffff;
+}
+
+.name {
+        background-color: #4aaaa5;
+}
+
+.buttons {
+        border-style: none solid none none;
+        border-color: #4aaaa5;
+       
+}
