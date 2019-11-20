@@ -7,36 +7,104 @@
 
 <link rel="stylesheet" type="text/css" href="style.css"> -->
 
-<body>
+<body class="body">
 <!-- Navbar -->
-<div class="container">
-    <nav class="navbar navbar-expand-md fixed-top navbar-light border-bottom border-dark">
-        <a class="navbar-brand col-sm-1"></a>   
-        <a class="navbar-brand col-sm-2 name text-center">Ethan Irvine</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="col-sm-5"></div>       
-        <div class="collapse navbar-collapse col-sm-4 " id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item buttons">
-                    <a class="nav-link" href="index.html">About</a>
-                </li>
-                <li class="nav-item buttons">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item buttons">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>      
+<div>
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark border-bottom border-dark">
+        <div class="container"> 
+            <a class="navbar-brand col-sm-4 col-md-3 col-lg-2 name text-center">Ethan Irvine</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-sm-4" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item buttons">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item buttons">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item buttons">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>     
     </nav>    
 </div>
 
 <div class="jumbotron border border-dark container content">
+    <div class="container">
+        <h1>Contact</h1>    
+        <hr class="line">
+        
+        <!--Section: Contact v.2-->
+        <section class="mb-4">    
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="name" class="">Your name</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="email" class="">Your email</label>
+                                    <input type="text" id="email" name="email" class="form-control">
+                                </div>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="subject" class="">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <label for="message">Your message</label>
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                    </form>
+                    <div class="text-center text-md-left">
+                        <a class="btn text-light contact-send" onclick="document.getElementById('contact-form').submit();">Send</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <!--Grid column-->
+            </div>
+        </section>
+        <!--Section: Contact v.2-->
+    </div>
 </div>
 
-
+<footer class="static-bottom footer"></footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
